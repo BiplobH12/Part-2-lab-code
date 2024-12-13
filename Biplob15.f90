@@ -25,10 +25,9 @@ implicit none
 real,intent(in)::a,b
 integer,intent(in)::n
 integer::i
-real::p=1.0
+x=1.0
  do i=1,n
-p=p*(i/real(a+i*b))
+x=x*(i/real(a+i*b))
 end do
-x=p
 end function
 
