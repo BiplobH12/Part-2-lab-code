@@ -15,9 +15,8 @@ real function t(n)
 implicit none
 real::sum=1.0
 integer,intent(in)::n
-integer::i
+t=1.0
 do i=1,n
-sum=sum*((2.0*i-1)/(2.0*i))
+t=t*((2.0*i-1)/(2.0*i))
 end do
-t=sum
 end function
